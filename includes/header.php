@@ -7,11 +7,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <header>
-        <h1>Tienda de Zapatos</h1>
-        <!-- Barra de búsqueda -->
-        <form action="search.php" method="GET" class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" name="query" placeholder="Buscar zapatos">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-        </form>
+    <!-- <header data-bs-theme="dark">
+        <div class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <strong>Tienda de Zapatos</strong>
+                </a>
+                <form action="search.php" method="GET" class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" name="query" placeholder="Buscar zapatos">
+                </form>
+            </div>
+        </div>
+    </header> -->
+    <header class="py-3 mb-4 border-bottom">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+                <span class="fs-4">Tienda de Zapatos</span>
+            </a>
+            <!-- Barra de busqueda -->
+            <form action="search.php" method="GET" class="col-12 col-lg-auto mb-3 mb-lg-0">
+                <input class="form-control mr-sm-2" type="text" name="query" placeholder="Buscar zapatos">
+            </form>
+        </div>
     </header>
