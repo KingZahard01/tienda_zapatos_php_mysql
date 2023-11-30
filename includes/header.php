@@ -37,13 +37,13 @@
                 Buscar por tipo
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Casual</a></li>
-                    <li><a class="dropdown-item" href="#">Trabajo</a></li>
-                    <li><a class="dropdown-item" href="#">Desporte</a></li>
+                    <li><a class="dropdown-item" href="search-tipo.php?tipo=Casual">Casual</a></li>
+                    <li><a class="dropdown-item" href="search-tipo.php?tipo=Trabajo">Trabajo</a></li>
+                    <li><a class="dropdown-item" href="search-tipo.php?tipo=Deporte">Deporte</a></li>
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="#">Todos</a></li>
+                    <li><a class="dropdown-item" href="search-tipo.php?tipo=Todos">Todos</a></li>
                 </ul>
             </div>
         </div>
