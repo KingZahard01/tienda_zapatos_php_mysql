@@ -6,24 +6,13 @@
     <title>Tienda de Zapatos</title>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
 </head>
 
 <body>
-    <!-- <header data-bs-theme="dark">
-        <div class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
-            <div class="container">
-                <a href="#" class="navbar-brand d-flex align-items-center">
-                    <strong>Tienda de Zapatos</strong>
-                </a>
-                <form action="search.php" method="GET" class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="text" name="query" placeholder="Buscar zapatos">
-                </form>
-            </div>
-        </div>
-    </header> -->
     <header class="py-3 mb-4 border-bottom">
         <div class="container d-flex flex-wrap justify-content-center">
-            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+            <a href="index.php" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
                 <span class="fs-4">Tienda de Zapatos</span>
             </a>
             <!-- Barra de busqueda -->

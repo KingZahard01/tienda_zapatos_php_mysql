@@ -6,13 +6,7 @@
             <a href="index.php" class="nav-link px-2 text-body-secondary">Inicio</a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">Informe mensual de ventas</a>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">Seguimiento en línea</a>
-        </li>
-        <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">Devoliciones</a>
+            <a href="monthly_report.php" class="nav-link px-2 text-body-secondary">Informe mensual de ventas</a>
         </li>
         <li class="nav-item">
             <a href="workers.php" class="nav-link px-2 text-body-secondary">Registro y control de empleados</a>

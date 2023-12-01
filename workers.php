@@ -108,16 +108,16 @@ if (isset($_POST['register'])) {
     $sql = "SELECT * FROM empleado";
     $result = mysqli_query($conn, $sql);
 
-    while ($mostrar = mysqli_fetch_array($result)) {
+    while ($fila = mysqli_fetch_array($result)) {
 
     ?>
 
       <tr>
-        <td> <?php echo $mostrar['id'] ?></td>
-        <td> <?php echo $mostrar['name'] ?></td>
-        <td> <?php echo $mostrar['rol'] ?></td>
-        <td> <?php echo $mostrar['direccion'] ?></td>
-        <td> <?php echo $mostrar['telefono'] ?></td>
+        <td> <?php echo $fila['id'] ?></td>
+        <td> <?php echo $fila['name'] ?></td>
+        <td> <?php echo $fila['rol'] ?></td>
+        <td> <?php echo $fila['direccion'] ?></td>
+        <td> <?php echo $fila['telefono'] ?></td>
         <td>
           <?php echo "<a href='editar.php?id=" . $fila['id'] . "'>EDITAR</a>" ?>
           <?php echo "<a href='eliminar.php?id=" . $fila['id'] . "'>ELIMINAR</a>" ?>

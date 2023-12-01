@@ -3,25 +3,6 @@ include('db.php');
 include('includes/header.php');
 ?>
 
-<!-- <section>
-  <?php
-  // Mostrar productos desde la base de datos 
-  // $result = mysqli_query($conn, "SELECT * FROM shoes");
-  // // Dentro del bucle que muestra los productos
-  // while ($row = mysqli_fetch_assoc($result)) {
-  //   echo "<div class='product'>";
-  //   echo "<h2>{$row['name']}</h2>";
-  //   echo "<p>{$row['description']}</p>";
-  //   echo "<p>Precio: {$row['price']} MXN</p>";
-
-  //   // Botón de compra
-  //   echo "<button type='button' class='btn btn-success'>Comprar</button>";
-
-  //   echo "</div>";
-  // }
-  ?>
-</section> -->
-
 <div class="album py-5 bg-body-tertiary">
   <div class="container">
 
@@ -41,12 +22,17 @@ include('includes/header.php');
         echo "      <p class='card-text'>{$row['description']}</p>";
         echo "      <p class='card-text'>{$row['price']}</p>";
         echo "      <p class='card-text'>{$row['tipo']}</p>";
+        
+
         echo "      <div class='d-flex justify-content-between align-items-center'>";
         echo "        <div class='btn-group'>";
-        echo "          <button type='button' class='btn btn-sm btn-outline-secondary'>View</button>";
-        echo "          <button type='button' class='btn btn-sm btn-outline-secondary'>Edit</button>";
+        echo "<form action='sell.php' method='POST'>";
+        echo "<input type='hidden' name='shoe_id' value='{$row['id']}'>";
+        echo "<label for='quantity'>Cantidad:</label>";
+        echo "<input type='number' name='quantity' min='1' value='1'>";
+        echo "<button class='btn btn-sm btn-outline-secondary type='submit'>Vender</button>";
+        echo "</form>";
         echo "        </div>";
-        echo "        <small class='text-body-secondary'>9 mins</small>";
         echo "      </div>";
         echo "    </div>";
         echo "  </div>";
