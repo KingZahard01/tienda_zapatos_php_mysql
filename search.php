@@ -49,6 +49,7 @@ include('includes/header.php');
                         echo "      <p class='card-text'>{$row['name']}</p>";
                         echo "      <p class='card-text'>{$row['description']}</p>";
                         echo "      <p class='card-text'>{$row['price']}</p>";
+                        echo "      <p class='card-text'>{$row['tipo']}</p>";
                         echo "      <div class='d-flex justify-content-between align-items-center'>";
                         echo "        <div class='btn-group'>";
                         echo "          <button type='button' class='btn btn-sm btn-outline-secondary'>View</button>";

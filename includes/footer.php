@@ -15,7 +15,7 @@
             <a href="#" class="nav-link px-2 text-body-secondary">Devoliciones</a>
         </li>
         <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">Registro y control de empleados</a>
+            <a href="workers.php" class="nav-link px-2 text-body-secondary">Registro y control de empleados</a>
         </li>
     </ul>
 </footer>

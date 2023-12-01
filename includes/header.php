@@ -30,11 +30,11 @@
             <form action="search.php" method="GET" class="col-12 col-lg-auto mb-3 mb-lg-0">
                 <input class="form-control mr-sm-2" type="text" name="query" placeholder="Buscar zapatos">
             </form>
-            
+
             <!-- Example single secondary button -->
             <div class="btn-group">
                 <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                Buscar por tipo
+                    Buscar por tipo
                 </button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="search-tipo.php?tipo=Casual">Casual</a></li>
