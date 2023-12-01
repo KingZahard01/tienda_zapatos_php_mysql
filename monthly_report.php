@@ -4,6 +4,12 @@ include('includes/header.php');
 ?>
 
 <section>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ventas del mes</a>
+        </div>
+    </nav>
+
     <table class="table table-striped">
         <thead>
             <tr>
@@ -36,7 +42,7 @@ include('includes/header.php');
 
 
     <!-- Botón para imprimir el informe en PDF -->
-    <button onclick="window.print()">Imprimir en PDF</button>
+    <button class="btn btn-secondary" onclick="window.print()">Imprimir en PDF</button>
 
 </section>
 
