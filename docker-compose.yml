@@ -2,18 +2,19 @@ version: '3'
 
 services:
   php:
+    container_name: php-webserver
     build:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "80:80"
+      - "8080:80"
     volumes:
       - ./src:/var/www/html
     depends_on:
       - mysql
 
   mysql:
-    image: mysql:latest
+    image: mysql:8.3
     ports:
       - "3306:3306"
     environment:

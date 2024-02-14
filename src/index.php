@@ -2,7 +2,7 @@
 include('db.php');
 include('includes/header.php');
 ?>
-
+<h1>Testing a php apache docker container</h1>
 <div class="album py-5 bg-body-tertiary">
   <div class="container">
 
@@ -13,9 +13,6 @@ include('includes/header.php');
       while ($row = mysqli_fetch_assoc($result)) { ?>
         <div class='col'>
           <div class='card shadow-sm'>
-            <!-- <svg class='bd-placeholder-img card-img-top' width='100%' height='225' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Placeholder: Thumbnail' preserveAspectRatio='xMidYMid slice' focusable='false'>
-              <rect width='100%' height='100%' fill='#55595c' /><text x='50%' y='50%' fill='#eceeef' dy='.3em'>Thumbnail</text>
-            </svg> -->
             <img src="images/shoe.jpg" alt="imagen pedorra de zapato xd" width="100%" height="225">
             <div class='card-body'>
               <?php echo "<p class='card-text'>{$row['name']}</p>" ?>
