@@ -18,10 +18,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $insertSale = mysqli_query($conn, "INSERT INTO sales (shoe_id, quantity, total_amount, sale_date) VALUES ($shoeId, $quantity, $totalAmount, '$saleDate')");
 
     if ($insertSale) {
-        echo "Venta realizada con éxito.";
+        echo "<script language='JavaScript'>
+            alert('Venta realizada');
+            location.assign('index.php');
+            </script>
+        ";
     } else {
-        echo "Error al procesar la venta: " . mysqli_error($conn);
+        echo "<script language='JavaScript'>
+            alert('La venta no se realizo');
+            location.assign('index.php');
+            </script>
+        ";
     }
+    
 } else {
     // Redireccionar si se intenta acceder directamente a sell.php sin enviar datos de formulario
     header("Location: index.php");
